@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:replace="~{/task/header.html :: header}"> </div>
+
+    <div>
+        <h3> 대기 명단 작성 </h3>
+        전화번호 <input class="vphoneInput"/> <br/>
+        인원 수 <input class="vcountInput"/> <br/>
+        <button type="button" onclick="signup()"> 명단 작성 </button>
+    </div>
+    
+    <br/>
+
+    <div> <h3> 현재 대기 인원 </h3>
+    <div class="list"> </div>
+    </div>
+    
+    <script src="/task/member.js"> </script>
+
+    <script> list() </script>
+</body>
+</html>
